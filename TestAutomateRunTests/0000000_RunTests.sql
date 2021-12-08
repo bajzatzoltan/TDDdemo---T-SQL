@@ -4,7 +4,7 @@ DBCC CHECKIDENT ('dbo.TestResults', RESEED, 1) WITH NO_INFOMSGS
 END
 GO
 
-:SETVAR WorkDirectory "C:\Users\Bajzat.Zoltan\source\repos\AutomateRunTests\TestAutomateRunTests\00500_Programming_objects\"
+:SETVAR WorkDirectory "C:\...\AutomateRunTests\TestAutomateRunTests\00500_Programming_objects\" --YOU NEED TO SET PATH OF ENVIROMENT
 :SETVAR WorkFile "Directory_Listing.tmp"
 :SETVAR RunFile "Run_These_SQL_Files.txt"
 

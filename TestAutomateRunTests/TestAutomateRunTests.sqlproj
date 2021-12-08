@@ -58,7 +58,7 @@
     <Folder Include="00500_Programming_objects" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="00000_TestEnviroment\0000000_AutamateRunTests_db.sql" />
+    <None Include="00000_TestEnviroment\0000000_AutomateRunTests_db.sql" />
     <None Include="00500_Programming_objects\0002000_tst_dbo.GetBuzzFizzResult_udf.sql" />
     <None Include="00500_Programming_objects\0001000_tst_dbo.GetFizzBuzzResult_udf.sql" />
   </ItemGroup>
