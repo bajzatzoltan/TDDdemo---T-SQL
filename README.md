@@ -1,6 +1,7 @@
 # TDDdemo
 This solution was made in Visual Studio with SQL Server Data Tools (SSDT) and written in T-SQL language.
 It demonstrate my knowledge of test-driven development and it can be execute all unit test from another sql files. 
+
 It contains two projects: AutomateRunTests for live code (two function) and TestAutomateRunTests for unit tests. 
 You need to connect a database of SQL server instance (Left click project name in Solution Explorer -> Properties -> Debug -> Click Edit button -> Choose a database)
 After that you need to Publish AutomateRunTests (Left click AutomateRunTests project name in Solution Explorer -> Publish.. -> Click Edit button -> Choose a database -> Click Publish button)
