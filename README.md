@@ -4,8 +4,8 @@ It demonstrate my knowledge of test-driven development and it can be execute all
 
 It contains two projects: AutomateRunTests for live code (two function) and TestAutomateRunTests for unit tests. 
 You need to connect a database of SQL server instance (Left click project name in Solution Explorer -> Properties -> Debug -> Click Edit button -> Choose a database)
-After that you need to Publish AutomateRunTests (Left click AutomateRunTests project name in Solution Explorer -> Publish.. -> Click Edit button -> Choose a database -> Click Publish button)
-The connected database and published database must be same.
+After that you need to Publish AutomateRunTests project (Left click AutomateRunTests project name in Solution Explorer -> Publish.. -> Click Edit button -> Choose a database -> Click Publish button) and Publish TestAutomateRunTests project.
+The connected database and published database must be same!
 Open 0000000_RunTests.sql file from Solution Explorer, switch SQLCMD mode and set WorkDirectory variable to local enviroment (You need to set path of sq. files)
 Click Execute button and execute all unit tests.
 
