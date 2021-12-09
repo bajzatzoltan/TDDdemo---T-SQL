@@ -9,6 +9,7 @@ The connected database and published database must be same!
 Open 0000000_RunTests.sql file from Solution Explorer, switch SQLCMD mode and set WorkDirectory variable to local enviroment (You need to set path of sql files).
 Click Execute button and execute all unit tests.
 
-If you do not have Visual Studio, you can run 0001000_dbo.GetFizzBuzzResult_udf.sql, 0002000_dbo.GetBuzzFizzResult_udf.sql files in a database of SQL Server instance from another IDE, like SQL Server Management Studio. After that, just run unit tests (0001000_tst_dbo.GetFizzBuzzResult_udf.sql, 0002000_tst_dbo.GetBuzzFizzResult_udf.sql).
+If you do not have Visual Studio, you can execute all files from 00300_Data_structure and 00500_Programming_objects directories in a database of SQL Server. You need a IDE, like SQL Server Management Studio. 
+After that, just execute files from 00000_TestEnviroment and 00500_Programming_objects directories.
 
 

@@ -115,7 +115,7 @@ BEGIN;
 		
 		DECLARE @result NVARCHAR(8)
 		DECLARE @number_par INT = 1;
-		DECLARE @expectedResult NVARCHAR(8) = dbo.GetFizzBuzzResult_udf(@number_par); --DEPEND THE dbo.GetFizzBuzzResult_udf, WHICH IS TESTED!!
+		DECLARE @expectedResult NVARCHAR(8) = dbo.GetFizzBuzzResult_udf(@number_par); --THE PROCEDURE DEPENDS ON THE dbo.GetFizzBuzzResult_udf, WHICH IS TESTED!!
 		DECLARE @currentID INT = IDENT_CURRENT('dbo.FizzBuzzResult');
 
 		EXEC dbo.InsertFizzBuzzResultTable_usp @number_par
