@@ -10,6 +10,7 @@
 		
 		DECLARE @result NVARCHAR(8);
 		DECLARE @number_par INT = 1;	
+		DECLARE @currentID INT = IDENT_CURRENT('dbo.FizzBuzzResult');
 
 		EXEC dbo.InsertFizzBuzzResultTable_usp @number_par
 
@@ -25,6 +26,10 @@
 	END CATCH;
 		PRINT CONCAT('TEST RESULT: ', @TESTRESULT);
 		UPDATE dbo.TestResults SET TestResult = @TESTRESULT WHERE TestNumber = @TESTNUMBER;
+		
+		DELETE FROM dbo.FizzBuzzResult WHERE ID > @currentID;
+		DBCC CHECKIDENT ('dbo.FizzBuzzResult', RESEED, @currentID) WITH NO_INFOMSGS;
+
 		PRINT '---------------------------------------------';
 END;
 GO
@@ -41,6 +46,7 @@ BEGIN;
 		
 		DECLARE @result NVARCHAR(8);
 		DECLARE @number_par INT = NULL;	
+		DECLARE @currentID INT = IDENT_CURRENT('dbo.FizzBuzzResult');
 
 		EXEC dbo.InsertFizzBuzzResultTable_usp @number_par
 
@@ -58,6 +64,10 @@ BEGIN;
 	END CATCH;
 		PRINT CONCAT('TEST RESULT: ', @TESTRESULT);
 		UPDATE dbo.TestResults SET TestResult = @TESTRESULT WHERE TestNumber = @TESTNUMBER;
+
+		DELETE FROM dbo.FizzBuzzResult WHERE ID > @currentID;
+		DBCC CHECKIDENT ('dbo.FizzBuzzResult', RESEED, @currentID) WITH NO_INFOMSGS;
+
 		PRINT '---------------------------------------------';
 END;
 GO
@@ -79,7 +89,7 @@ BEGIN;
 
 		EXEC dbo.InsertFizzBuzzResultTable_usp @number_par
 
-		SELECT @result = NumberParameter FROM dbo.FizzBuzzResult;
+		SELECT @result = NumberParameter FROM dbo.FizzBuzzResult WHERE ID = @currentID+1;
 		IF (@result = @expectedResult)
 			BEGIN;
 				SET @TESTRESULT = 'True';
@@ -96,7 +106,7 @@ BEGIN;
 		PRINT CONCAT('TEST RESULT: ', @TESTRESULT);
 		UPDATE dbo.TestResults SET TestResult = @TESTRESULT WHERE TestNumber = @TESTNUMBER;
 
-		DELETE FROM dbo.FizzBuzzResult WHERE ID >= @currentID;
+		DELETE FROM dbo.FizzBuzzResult WHERE ID > @currentID;
 		DBCC CHECKIDENT ('dbo.FizzBuzzResult', RESEED, @currentID) WITH NO_INFOMSGS;
 
 		PRINT '---------------------------------------------';
@@ -120,7 +130,7 @@ BEGIN;
 
 		EXEC dbo.InsertFizzBuzzResultTable_usp @number_par
 
-		SELECT @result = FizzBuzzResult FROM dbo.FizzBuzzResult;
+		SELECT @result = FizzBuzzResult FROM dbo.FizzBuzzResult WHERE ID = @currentID+1;
 		IF (@result = @expectedResult)
 			BEGIN;
 				SET @TESTRESULT = 'True';
@@ -137,7 +147,7 @@ BEGIN;
 		PRINT CONCAT('TEST RESULT: ', @TESTRESULT);
 		UPDATE dbo.TestResults SET TestResult = @TESTRESULT WHERE TestNumber = @TESTNUMBER;
 
-		DELETE FROM dbo.FizzBuzzResult WHERE ID >= @currentID;
+		DELETE FROM dbo.FizzBuzzResult WHERE ID > @currentID;
 		DBCC CHECKIDENT ('dbo.FizzBuzzResult', RESEED, @currentID) WITH NO_INFOMSGS;
 
 		PRINT '---------------------------------------------';
