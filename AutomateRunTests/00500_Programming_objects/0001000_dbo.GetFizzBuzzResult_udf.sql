@@ -1,5 +1,5 @@
 ﻿-----------------------------------------------------
-----Unit test number: 0002000-001
+----Unit test number: 0001000-001
 --CREATE 
 --OR ALTER 
 --FUNCTION dbo.GetFizzBuzzResult_udf (@number INT)
@@ -9,7 +9,7 @@
 --	RETURN @fizzBuzzResult;
 --END;
 -----------------------------------------------------
-----Unit test number: 0002000-002
+----Unit test number: 0001000-002
 --CREATE 
 --OR ALTER 
 --FUNCTION dbo.GetFizzBuzzResult_udf (@number INT)
@@ -20,7 +20,7 @@
 --	RETURN @fizzBuzzResult;
 --END;
 -----------------------------------------------------
-----Unit test number: 0002000-003
+----Unit test number: 0001000-003
 --CREATE 
 --OR ALTER 
 --FUNCTION dbo.GetFizzBuzzResult_udf (@number INT)
@@ -31,7 +31,7 @@
 --	RETURN @fizzBuzzResult;
 --END;
 -----------------------------------------------------
-----Unit test number: 0002000-004
+----Unit test number: 0001000-004
 --CREATE 
 --OR ALTER 
 --FUNCTION dbo.GetFizzBuzzResult_udf (@number INT)
@@ -49,7 +49,7 @@
 --	RETURN @fizzBuzzResult;
 --END;
 -----------------------------------------------------
-----Unit test number: 0002000-005
+----Unit test number: 0001000-005
 --CREATE 
 --OR ALTER 
 --FUNCTION dbo.GetFizzBuzzResult_udf (@number INT)
@@ -71,7 +71,7 @@
 --	RETURN @fizzBuzzResult;
 --END;
 -----------------------------------------------------
-----Unit test number: 0002000-006
+----Unit test number: 0001000-006
 --CREATE 
 --OR ALTER 
 --FUNCTION dbo.GetFizzBuzzResult_udf (@number INT)
@@ -93,7 +93,7 @@
 --	RETURN @fizzBuzzResult;
 --END;
 -----------------------------------------------------
-----Unit test number: 0002000-007
+----Unit test number: 0001000-007
 --CREATE 
 --OR ALTER 
 --FUNCTION dbo.GetFizzBuzzResult_udf (@number INT)
@@ -115,7 +115,7 @@
 --	RETURN @fizzBuzzResult;
 --END;
 -----------------------------------------------------
-----Unit test number: 0002000-008
+----Unit test number: 0001000-008
 --CREATE 
 --OR ALTER 
 --FUNCTION dbo.GetFizzBuzzResult_udf (@number INT)
