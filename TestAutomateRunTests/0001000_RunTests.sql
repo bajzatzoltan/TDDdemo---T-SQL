@@ -1,7 +1,7 @@
 ﻿-------------------------------------------------
 --SET PATH OF SOLUTION IN DIRECTORY STRUCTURE:
 -------------------------------------------------
-:SETVAR WorkDirectory "C:\Users\Bajzat.Zoltan\source\repos\" --YOU NEED TO SET PATH OF ENVIROMENT
+:SETVAR WorkDirectory "...\" --YOU NEED TO SET PATH OF ENVIROMENT E.G. C:\DEMO
 
 -------------------------------------------------
 --CREATE TEST ENVIROMENT:
