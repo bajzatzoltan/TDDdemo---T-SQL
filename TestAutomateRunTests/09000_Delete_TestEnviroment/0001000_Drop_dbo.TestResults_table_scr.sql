@@ -5,3 +5,4 @@
 	BEGIN;
 		DROP TABLE [dbo].[TestResults]
 	END;
+GO
