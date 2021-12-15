@@ -1,12 +1,12 @@
 ﻿-------------------------------------------------
 --SET PATH OF SOLUTION IN DIRECTORY STRUCTURE:
 -------------------------------------------------
-:SETVAR WorkDirectory "...\" --YOU NEED TO SET PATH OF ENVIROMENT E.G. C:\DEMO
+:SETVAR WorkDirectory "...\TDDdemo\TestAutomateRunTests\" --YOU NEED TO SET PATH OF PROJECT IN LOCAL ENVIROMENT E.G. C:\DEMO\TDDdemo\TestAutomateRunTests\
 
 -------------------------------------------------
 --DELETE TEST ENVIROMENT:
 -------------------------------------------------
-:SETVAR TestEnviromentDirectory "TDDdemo\TestAutomateRunTests\09000_Delete_TestEnviroment\"
+:SETVAR TestEnviromentDirectory "09000_Delete_TestEnviroment\"
 :SETVAR RunFile "Run_These_SQL_Files.txt"
 
 !!DEL $(WorkDirectory)$(TestEnviromentDirectory)$(RunFile)
