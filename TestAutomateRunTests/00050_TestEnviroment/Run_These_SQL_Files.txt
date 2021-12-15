@@ -1,0 +1,1 @@
+:r "C:\Users\Bajzat.Zoltan\source\repos\TDDdemo\TestAutomateRunTests\00050_TestEnviroment\0001000_TestResults_tbl.sql"

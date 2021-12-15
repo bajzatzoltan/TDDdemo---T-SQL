@@ -54,7 +54,7 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-    <Folder Include="00000_TestEnviroment" />
+    <Folder Include="00050_TestEnviroment" />
     <Folder Include="00500_Programming_objects" />
   </ItemGroup>
   <ItemGroup>
@@ -63,9 +63,9 @@
     <None Include="00500_Programming_objects\0003000_tst_InsertFizzBuzzResultTable_usp.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="0000000_RunTests.sql" />
+    <None Include="0001000_RunTests.sql" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="00000_TestEnviroment\0001000_TestResults_tbl.sql" />
+    <None Include="00050_TestEnviroment\0001000_TestResults_tbl.sql" />
   </ItemGroup>
 </Project>
