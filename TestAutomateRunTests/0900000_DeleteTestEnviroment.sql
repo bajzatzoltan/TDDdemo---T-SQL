@@ -1,4 +1,11 @@
-﻿:SETVAR WorkDirectory "C:\Users\Bajzat.Zoltan\source\repos\" --YOU NEED TO SET PATH OF ENVIROMENT
+﻿-------------------------------------------------
+--SET PATH OF SOLUTION IN DIRECTORY STRUCTURE:
+-------------------------------------------------
+:SETVAR WorkDirectory "C:\Users\Bajzat.Zoltan\source\repos\" --YOU NEED TO SET PATH OF ENVIROMENT
+
+-------------------------------------------------
+--DELETE TEST ENVIROMENT:
+-------------------------------------------------
 :SETVAR TestEnviromentDirectory "TDDdemo\TestAutomateRunTests\09000_Delete_TestEnviroment\"
 :SETVAR RunFile "Run_These_SQL_Files.txt"
 
