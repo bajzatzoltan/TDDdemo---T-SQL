@@ -56,16 +56,19 @@
     <Folder Include="Properties" />
     <Folder Include="00050_TestEnviroment" />
     <Folder Include="00500_Programming_objects" />
+    <Folder Include="09000_Delete_TestEnviroment" />
   </ItemGroup>
   <ItemGroup>
     <None Include="00500_Programming_objects\0002000_tst_dbo.GetBuzzFizzResult_udf.sql" />
     <None Include="00500_Programming_objects\0001000_tst_dbo.GetFizzBuzzResult_udf.sql" />
     <None Include="00500_Programming_objects\0003000_tst_InsertFizzBuzzResultTable_usp.sql" />
+    <None Include="09000_Delete_TestEnviroment\0001000_Drop_dbo.TestResults_table_scr.sql" />
+    <None Include="0900000_DeleteTestEnviroment.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="0001000_RunTests.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="00050_TestEnviroment\0001000_TestResults_tbl.sql" />
+    <None Include="00050_TestEnviroment\0001000_dbo.TestResults_tbl.sql" />
   </ItemGroup>
 </Project>

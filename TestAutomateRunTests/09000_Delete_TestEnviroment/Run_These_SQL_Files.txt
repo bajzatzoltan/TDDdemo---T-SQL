@@ -1,0 +1,1 @@
+:r "C:\Users\Bajzat.Zoltan\source\repos\TDDdemo\TestAutomateRunTests\09000_Delete_TestEnviroment\0001000_Drop_dbo.TestResults_table_scr.sql"

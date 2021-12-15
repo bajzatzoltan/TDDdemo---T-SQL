@@ -11,23 +11,23 @@
 GO
 
 BEGIN
-TRUNCATE TABLE dbo.TestResults
-DBCC CHECKIDENT ('dbo.TestResults', RESEED, 1) WITH NO_INFOMSGS
+	TRUNCATE TABLE dbo.TestResults
+	DBCC CHECKIDENT ('dbo.TestResults', RESEED, 1) WITH NO_INFOMSGS
 END
 GO
 
-:SETVAR WorkDirectory "C:\Users\Bajzat.Zoltan\source\repos\TDDdemo\TestAutomateRunTests\00500_Programming_objects\" --YOU NEED TO SET PATH OF ENVIROMENT
+:SETVAR ProgramObjectsDirectory "TDDdemo\TestAutomateRunTests\00500_Programming_objects\"
 :SETVAR RunFile "Run_These_SQL_Files.txt"
 
-!!DEL $(WorkDirectory)$(RunFile)
+!!DEL $(WorkDirectory)$(ProgramObjectsDirectory)$(RunFile)
 
-!!FOR /F "usebackq tokens=*" %a in (`dir /b $(WorkDirectory)*.sql /on`) DO @ECHO :r "$(WorkDirectory)%a">> $(WorkDirectory)$(RunFile)
+!!FOR /F "usebackq tokens=*" %a in (`dir /b $(WorkDirectory)$(ProgramObjectsDirectory)*.sql /on`) DO @ECHO :r "$(WorkDirectory)$(ProgramObjectsDirectory)%a">> $(WorkDirectory)$(ProgramObjectsDirectory)$(RunFile)
 
-:r $(WorkDirectory)$(RunFile)
-
+:r $(WorkDirectory)$(ProgramObjectsDirectory)$(RunFile)
 GO
+
 BEGIN
-SELECT * FROM TestResults
+	SELECT * FROM TestResults
 END
 GO
 
